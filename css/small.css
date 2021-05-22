@@ -1,0 +1,22 @@
+main .cards {
+  flex-direction: row;
+}
+main .cards .card {
+  padding: 20px 25px;
+  font-size: 1.3rem;
+}
+main .cards .card a {
+  width: 70%;
+}
+main .cards > :first-child {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 8px;
+}
+main .cards > :last-child {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+/*# sourceMappingURL=small.css.map */

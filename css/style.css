@@ -1,0 +1,107 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 1.5rem;
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+main .cards {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 30px;
+  color: #f2f2f2;
+}
+main .cards .card {
+  padding: 12px 22px;
+  font-size: 0.7rem;
+}
+main .cards .card h1 {
+  margin: 10px 0;
+  font-family: "Big Shoulders Display", sans-serif;
+  text-transform: uppercase;
+}
+main .cards .card p {
+  margin-bottom: 20px;
+}
+main .cards .card a {
+  display: block;
+  padding: 10px 15px;
+  width: 40%;
+  border: 1px solid #f2f2f2;
+  border-radius: 20px;
+  text-decoration: none;
+  text-align: center;
+  background-color: #f2f2f2;
+  transition: border 0.3s, color 0.3s, background-color 0.3s;
+}
+main .cards .card a:hover {
+  border: 1px solid #f2f2f2;
+  color: #f2f2f2;
+  background-color: transparent;
+}
+main .cards > :first-child {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  background-color: #e38826;
+}
+main .cards > :first-child a {
+  color: #e38826;
+}
+main .cards > :nth-child(2) {
+  background-color: #006970;
+}
+main .cards > :nth-child(2) a {
+  color: #006970;
+}
+main .cards > :last-child {
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  background-color: #004241;
+}
+main .cards > :last-child a {
+  color: #004241;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 5px 0;
+  font-size: 1.3rem;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.75);
+  background-color: #777;
+}
+
+@media (min-width: 400px) {
+  main .cards .card a {
+    width: 20%;
+  }
+}
+@media (min-width: 1100px) {
+  main .cards .card p {
+    width: 200px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
